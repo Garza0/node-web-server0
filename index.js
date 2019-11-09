@@ -1,4 +1,4 @@
-require('http').createServer(requestHandler).listen(8080)
+require('http').createServer(requestHandler).listen(process.env.PORT || 8080)
 
 const fs = require('fs')
 
